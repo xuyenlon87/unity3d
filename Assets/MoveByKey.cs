@@ -25,5 +25,6 @@ public class MoveByKey : MonoBehaviour
         Vector3 direction = transform.right * hInput + transform.forward * vInput;
         characterController.SimpleMove(direction * movingSpeed);
 
+
     }
 }
