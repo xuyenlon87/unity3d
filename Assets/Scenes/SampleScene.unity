@@ -1111,6 +1111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a644ec70bffd5344ea0e2c03d4cfab25, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a644ec70bffd5344ea0e2c03d4cfab25, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1194,6 +1198,7 @@ GameObject:
   - component: {fileID: 1463837018}
   - component: {fileID: 1463837025}
   - component: {fileID: 1463837026}
+  - component: {fileID: 1463837027}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1233,6 +1238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 1463837018}
   movingSpeed: 5
+  jumpHeight: 7
+  dkJump: 0
 --- !u!136 &1463837021
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1326,6 +1333,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anglePerSecond: 120
+  angleOverDistance: 1
+  cameraHolder: {fileID: 2110997949}
+  minPitch: -80
+  maxPitch: 80
+  pitch: 0
 --- !u!54 &1463837026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1342,6 +1354,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &1463837027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463837017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7355facdcd9dd734395a5e87c4915099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1566057971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a644ec70bffd5344ea0e2c03d4cfab25, type: 3}
