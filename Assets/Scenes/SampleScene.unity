@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028502, g: 0.22571497, b: 0.3069231, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028454, g: 0.2257143, b: 0.30692187, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 64352260}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 89523873}
   m_Layer: 0
   m_Name: Environments
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1238,8 +1238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 1463837018}
   movingSpeed: 5
-  jumpHeight: 7
-  dkJump: 0
+  jumpHeight: 2
+  dkJump: 1
 --- !u!136 &1463837021
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37002b5701f27cc4eb42b921574ef6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anglePerSecond: 120
+  anglePerSecond: 100
   angleOverDistance: 1
   cameraHolder: {fileID: 2110997949}
   minPitch: -80
